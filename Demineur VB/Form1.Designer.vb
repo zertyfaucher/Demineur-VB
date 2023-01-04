@@ -26,11 +26,12 @@ Partial Class Form1
         Me.CBNom = New System.Windows.Forms.ComboBox()
         Me.ButJouer = New System.Windows.Forms.Button()
         Me.ButScore = New System.Windows.Forms.Button()
+        Me.ButOpt = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ButQuitter
         '
-        Me.ButQuitter.Location = New System.Drawing.Point(471, 377)
+        Me.ButQuitter.Location = New System.Drawing.Point(356, 406)
         Me.ButQuitter.Name = "ButQuitter"
         Me.ButQuitter.Size = New System.Drawing.Size(75, 23)
         Me.ButQuitter.TabIndex = 0
@@ -63,11 +64,22 @@ Partial Class Form1
         Me.ButScore.Text = "Tableau des scores"
         Me.ButScore.UseVisualStyleBackColor = True
         '
+        'ButOpt
+        '
+        Me.ButOpt.Location = New System.Drawing.Point(470, 377)
+        Me.ButOpt.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButOpt.Name = "ButOpt"
+        Me.ButOpt.Size = New System.Drawing.Size(75, 23)
+        Me.ButOpt.TabIndex = 4
+        Me.ButOpt.Text = "Options"
+        Me.ButOpt.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButOpt)
         Me.Controls.Add(Me.ButScore)
         Me.Controls.Add(Me.ButJouer)
         Me.Controls.Add(Me.CBNom)
@@ -82,4 +94,5 @@ Partial Class Form1
     Friend WithEvents CBNom As ComboBox
     Friend WithEvents ButJouer As Button
     Friend WithEvents ButScore As Button
+    Friend WithEvents ButOpt As Button
 End Class
